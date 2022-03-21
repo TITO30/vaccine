@@ -1,0 +1,622 @@
+* {
+  font-family: "Indie Flower", cursive;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+h1,h2,h3,h4,h5,p{
+  color:black;
+}
+
+
+/*Header---------------------------------------------------*/
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.nav-link {
+  display: flex;
+  gap: 80px;
+  list-style: none;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+}
+
+.nav-link:hover ul li {
+  cursor: pointer;
+}
+
+.header-link {
+  background: white;
+  border: none;
+  height: 50px;
+  width: 90px;
+}
+
+.header-link:hover {
+  background: #283d6d;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  opacity: 0.9;
+}
+
+.header-link:hover a {
+  color: white;
+}
+
+.menu-hamb {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 30px;
+  display: none;
+}
+
+/*Banner--------------------------------------------*/
+
+.banner {
+  width: 100%;
+  height: 650px;
+}
+
+.banner-container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.banner-info {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-text {
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  width: 60%;
+  margin: auto;
+}
+
+.text p {
+  padding-top: 20px;
+}
+
+.banner-img {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.banner-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-schedule {
+  width: 550px;
+  height: 200px;
+  background: white;
+  opacity: 0.9;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 300px;
+  top: 500px;
+  z-index: 3;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.title-schedule {
+  display: flex;
+  gap: 10px;
+}
+
+.list-schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  gap: 50px;
+  padding-top: 20px;
+}
+
+.list-schedule li {
+  justify-content: center;
+  align-items: center;
+}
+
+.list-items {
+  display: flex;
+  gap: 10px;
+}
+
+.logo-banner {
+  width: 20px;
+  height: 20px;
+}
+
+.list-btn {
+  background: #283d6d;
+  border: none;
+  height: 40px;
+  width: 80px;
+}
+
+.list-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+/*brands-------------------------------------------------------------------------*/
+
+.brands {
+  width: 80%;
+  margin: auto;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brand-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.brands-logo {
+  width: 180px;
+  height: 180px;
+}
+
+/*Text vaccine--------------------------------------------------------------*/
+
+.text-vaccine {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+/*Cards----------------------------------------------------------------------*/
+.cards {
+  width: 90%;
+  margin: auto;
+  height: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-items {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 200px;
+  gap: 10px;
+}
+
+.card-item {
+  width: 150px;
+  height: 200px;
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-item h2 {
+  padding-top: 10px;
+}
+
+.card-item p {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.card-logo {
+  width: 30px;
+  height: 30px;
+}
+
+/*preparations*/
+
+.preparations {
+  width: 100%;
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.preparation-items {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.preparation-img {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  background-image: url("/assets/img/banner-vaccine3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.preparation-text {
+  width: 60%;
+  margin-top: 50px;
+  height: auto;
+  display: block;
+}
+
+.description {
+  width: 60%;
+  margin: auto;
+  height: 30%;
+}
+
+.description-list {
+  height: 70%;
+  width: 60%;
+  margin: auto;
+}
+
+.description-list ul li {
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+.description-items {
+  display: flex;
+  gap: 10px;
+}
+
+.preparation-img2 {
+  width: 40%;
+  height: 100%;
+  height: 80%;
+  margin: auto;
+  background-image: url("/assets/img/banner-vaccine4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Footer*/
+.footer {
+  width: 100%;
+  height: 270px;
+  background: #eef3ff;
+}
+
+.footer-items {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.footer-text {
+  width: 50%;
+  margin: auto;
+  height: 100%;
+}
+
+.contact-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.contact-items a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-items p {
+  padding-top: 10px;
+}
+
+.terms {
+  text-align: end;
+  margin-top: 20px;
+}
+
+.rigths {
+  margin-top: 20px;
+}
+
+@media (max-width: 980px) {
+  .menu-hamb {
+    display: block;
+  }
+  .nav-item ul {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    text-align: center;
+    z-index: 15;
+    left: 0;
+    background: #283d6d;
+    height: 100%;
+    transform: translateX(-500px);
+  }
+
+  .header-link:hover {
+    background: #283d6d;
+    color: white;
+  }
+
+  .header-link {
+    background: #283d6d;
+    color: white;
+  }
+
+  .header-link a {
+    color: white;
+  }
+  .nav-item ul.nav-link.show {
+    transform: translateX(-10px);
+  }
+
+  .nav-item ul li {
+    padding: 20px;
+  }
+
+  /*Banner -----------------------------------------------------------------*/
+
+  .banner {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .banner-container {
+    height: 50%;
+  }
+
+  .banner-info {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-text {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    width: 60%;
+    margin: auto;
+  }
+
+  .text p {
+    padding-top: 20px;
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-schedule {
+    width: 90%;
+    margin: auto;
+    height: 50%;
+    margin-bottom: 10px;
+    background: white;
+    opacity: 0.9;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .title-schedule {
+    display: flex;
+    gap: 10px;
+  }
+
+  .list-schedule {
+    display: block;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    gap: 50px;
+    padding-top: 40px;
+  }
+
+  .list-schedule li {
+    display: block;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-items {
+    display: flex;
+    gap: 10px;
+  }
+
+  .logo-banner {
+    width: 20px;
+    height: 20px;
+  }
+
+  .brands {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .brand-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .brands-logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  /*Cards------------------------------------------*/
+
+  .cards {
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .card-items {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  /*preparations*/
+
+  .preparations {
+    width: 100%;
+    height: 950px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .preparation-items {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .preparation-img {
+    width: 90%;
+    height: 40%;
+    margin: auto;
+    background-image: url("/assets/img/banner-vaccine3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .preparation-img2 {
+    width: 90%;
+    height: 40%;
+    margin: auto;
+    background-image: url("/assets/img/banner-vaccine4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .preparation-text {
+    width: 90%;
+    margin-top: 50px;
+    height: auto;
+    display: block;
+  }
+
+  .description {
+    width: 90%;
+    margin: auto;
+    height: 30%;
+    padding-bottom: 30px;
+  }
+
+  .description-list {
+    height: 70%;
+    margin-top: 40px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .description-list ul li {
+    list-style: none;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .description-items {
+    display: flex;
+    gap: 10px;
+  }
+
+  /*Footer------------------------------*/
+  
+  .footer{
+    height: auto;
+  }
+  
+  .footer-items {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .contact-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+}
